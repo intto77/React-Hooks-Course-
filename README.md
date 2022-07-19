@@ -13,7 +13,7 @@ https://www.youtube.com/watch?v=LlvBzyy-558
 
 <ul>
   <h2>Additional Hooks</h1>
-  <li><h3>useReducer</h3></li>
+  <li><h3><a href="./src/ReducerTutorial.js">useReducer</a></h3></li>
   <li><h3>useCallback</h3></li>
   <li><h3>useMemo</h3></li>
   <li><h3>useRef</h3></li>
