@@ -1,16 +1,12 @@
 import React, { useState } from "react";
 
 const StateTutorial = () => {
-  const [counter, setCounter] = useState(0);
-
-  const incremet = () => {
-    setCounter(counter + 1);
-  };
+  const [inputValue, setInputValue] = useState("Pedro");
 
   return (
     <div>
-      {counter}
-      <button onClick={incremet}>incremet</button>
+      <input placeholder="enter something" />
+      {inputValue}
     </div>
   );
 };
