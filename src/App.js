@@ -1,9 +1,9 @@
-import StateTutorial from "./StateTutorial";
+import ReducerTutorial from "./ReducerTutorial";
 
 function App() {
   return (
     <div>
-      <StateTutorial />
+      <ReducerTutorial />
     </div>
   );
 }
