@@ -5,8 +5,19 @@ React Hooks Course - All React Hooks Explained
 https://www.youtube.com/watch?v=LlvBzyy-558
 
 <ul>
-  <h1>Basic Hooks</h1>
-  <ul>useState</ul>
-  <ul>useEffect</ul>
-  <ul>useContext</ul>
+  <h2>Basic Hooks</h1>
+  <li><h3>useState</h3></li>
+  <li><h3>useEffect</h3></li>
+  <li><h3>useContext</h3></li>
+</ul>
+
+<ul>
+  <h2>Additional Hooks</h1>
+  <li><h3>useReducer</h3></li>
+  <li><h3>useCallback</h3></li>
+  <li><h3>useMemo</h3></li>
+  <li><h3>useRef</h3></li>
+  <li><h3>useImperativeHandle</h3></li>
+  <li><h3>useLayoutEffect</h3></li>
+  <li><h3>useDebugValue</h3></li>
 </ul>
