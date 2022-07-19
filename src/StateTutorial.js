@@ -1,10 +1,10 @@
-import React from "react";
+import React, { useState } from "react";
 
 const StateTutorial = () => {
-  let counter = 0;
+  const [counter, setCounter] = useState(0);
+
   const incremet = () => {
-    counter = counter + 1;
-    console.log(counter);
+    setCounter(counter + 1);
   };
 
   return (
