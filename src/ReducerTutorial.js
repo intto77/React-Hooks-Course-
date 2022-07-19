@@ -1,22 +1,34 @@
-﻿import React, { useState } from "react";
+﻿import React, { useReducer } from "react";
+
+const reducer = (state, action) => {
+  switch (action.type) {
+    case "INCREMENT":
+      return { counter: state.counter + 1, showText: state.showText };
+    case "toggleShowText":
+      return { counter: state.counter, showText: !state.showText };
+    default:
+      return state;
+  }
+};
 
 const ReducerTutorial = () => {
-  const [counter, setCounter] = useState(0);
-  const [showText, setShowText] = useState(true);
-
+  const [state, dispatch] = useReducer(reducer, {
+    counter: 0,
+    showText: true,
+  });
   return (
     <div>
-      <h1>{counter}</h1>
+      <h1>{state.counter}</h1>
       <button
         onClick={() => {
-          setCounter(counter + 1);
-          setShowText(!showText);
+          dispatch({ type: "INCREMENT" });
+          dispatch({ type: "toggleShowText" });
         }}
       >
         Click Here
       </button>
 
-      {showText && <p>This is a text</p>}
+      {state.showText && <p>This is a text</p>}
     </div>
   );
 };
