@@ -1,9 +1,9 @@
-import CallbackTutorial from "./CallbackTutorial";
+import UseDebugValeTutorial from "./UseDebugValeTutorial";
 import "./App.css";
 function App() {
   return (
     <div className="App">
-      <CallbackTutorial />
+      <UseDebugValeTutorial />
     </div>
   );
 }
