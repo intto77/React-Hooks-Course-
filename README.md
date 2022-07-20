@@ -20,7 +20,7 @@ Gzip Decompressor
   <li><h3>useCallback</h3></li>
   <li><h3>useMemo</h3></li> 
   <li><h3><a href="./src/RefTutorial.js">useRef</a></h3></li>
-  <li><h3><a href="./src/ImperativeHandle.js">useImperativeHandle</a></h3> <a href="<a href=https://merrily-code.tistory.com/46" target="_blank" >useImperativeHandle의 장점</a></li> 
+  <li><h3><a href="./src/ImperativeHandle.js">useImperativeHandle</a></h3> <a href="https://merrily-code.tistory.com/46" target="_blank" >useImperativeHandle의 장점</a></li> 
   <li><h3><a href="./src/LayoutEfectTutorial.js">useLayoutEffect</a></h3> <a href="https://merrily-code.tistory.com/46" target="_blank" >useLayoutEffect 훅에 대하여</a></li>
       
   <li><h3>useDebugValue</h3></li>
