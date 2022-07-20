@@ -21,6 +21,7 @@ Gzip Decompressor
   <li><h3>useMemo</h3></li>
   <li><h3><a href="./src/RefTutorial.js">useRef</a></h3></li>
   <li><h3>useImperativeHandle</h3></li>
-  <li><h3>useLayoutEffect</h3></li>
+  <li><h3><a href="./src/LayoutEfectTutorial.js">useLayoutEffect</a></h3> <a href="https://merrily-code.tistory.com/46">useLayoutEffect 훅에 대하여</a></li>
+      
   <li><h3>useDebugValue</h3></li>
 </ul>

@@ -1,9 +1,9 @@
-import RefTutorial from "./RefTutorial";
-
+import LayoutEfectTutorial from "./LayoutEfectTutorial";
+import "./App.css";
 function App() {
   return (
     <div>
-      <RefTutorial />
+      <LayoutEfectTutorial />
     </div>
   );
 }
