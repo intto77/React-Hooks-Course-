@@ -1,9 +1,9 @@
-import ReducerTutorial from "./ReducerTutorial";
+import EffectTutorial from "./EffectTutorial";
 
 function App() {
   return (
     <div>
-      <ReducerTutorial />
+      <EffectTutorial />
     </div>
   );
 }
