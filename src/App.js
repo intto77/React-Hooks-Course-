@@ -1,9 +1,9 @@
-import EffectTutorial from "./EffectTutorial";
+import RefTutorial from "./RefTutorial";
 
 function App() {
   return (
     <div>
-      <EffectTutorial />
+      <RefTutorial />
     </div>
   );
 }
