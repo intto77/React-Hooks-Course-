@@ -1,9 +1,9 @@
-import MemoTutorial from "./MemoTutorial";
+import CallbackTutorial from "./CallbackTutorial";
 import "./App.css";
 function App() {
   return (
     <div className="App">
-      <MemoTutorial />
+      <CallbackTutorial />
     </div>
   );
 }

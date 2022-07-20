@@ -1,5 +1,5 @@
 ﻿import axios from "axios";
-import { useEffect, useMemo, userEffect, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 
 const MemoTutorial = () => {
   const [data, setData] = useState(null);
