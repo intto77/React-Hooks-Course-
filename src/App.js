@@ -1,9 +1,9 @@
-import UseDebugValeTutorial from "./UseDebugValeTutorial";
+import UseDebugValueTutorial from "./UseDebugValueTutorial";
 import "./App.css";
 function App() {
   return (
     <div className="App">
-      <UseDebugValeTutorial />
+      <UseDebugValueTutorial />
     </div>
   );
 }

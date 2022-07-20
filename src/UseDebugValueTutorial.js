@@ -7,7 +7,7 @@
   useDebugValue,
 } from "react";
 
-const UseDebugValeTutorial = () => {
+const UseDebugValueTutorial = () => {
   function useApi(id) {
     const [info, setInfo] = useState(null);
 
@@ -31,4 +31,4 @@ const UseDebugValeTutorial = () => {
   return <div>{info && <h1>{JSON.stringify(info)}</h1>}</div>;
 };
 
-export default UseDebugValeTutorial;
+export default UseDebugValueTutorial;
