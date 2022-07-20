@@ -1,9 +1,9 @@
-import UseDebugValueTutorial from "./UseDebugValueTutorial";
+import LocalStorageTutorial from "./LocalStorageTutorial";
 import "./App.css";
 function App() {
   return (
     <div className="App">
-      <UseDebugValueTutorial />
+      <LocalStorageTutorial />
     </div>
   );
 }
