@@ -1,6 +1,9 @@
-﻿import React from "react";
+﻿import React, { useContext } from "react";
+import { AppContenxt } from "./ContextTutorial";
 
-const User = ({ username }) => {
+const User = () => {
+  const { username } = useContext(AppContenxt);
+
   return (
     <div>
       <h1>User : {username}</h1>

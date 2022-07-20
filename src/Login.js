@@ -1,6 +1,9 @@
-﻿import React from "react";
+﻿import React, { useContext } from "react";
+import { AppContenxt } from "./ContextTutorial";
 
-const Login = ({ setUsername }) => {
+const Login = () => {
+  const { setUsername } = useContext(AppContenxt);
+
   return (
     <div>
       <input

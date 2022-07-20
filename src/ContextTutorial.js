@@ -1,13 +1,16 @@
-﻿import { useState } from "react";
+﻿import React, { useState, createContext } from "react";
 import Login from "./Login";
 import User from "./User";
 
+export const AppContenxt = createContext(null);
+
 const ContextTutorial = () => {
   const [username, setUsername] = useState("");
+
   return (
-    <div>
-      <Login setUsername={setUsername} /> <User username={username} />
-    </div>
+    <AppContenxt.Provider value={(username, setUsername)}>
+      <Login /> <User />
+    </AppContenxt.Provider>
   );
 };
 
