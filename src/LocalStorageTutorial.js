@@ -1,21 +1,9 @@
-﻿import { useDebugValue, useState } from "react";
-import { useLocalStorage } from "./useLocalStorage";
+﻿import React from "react";
+//import { useLocalStorage } from "./useLocalStorage";
+import { useUpdateLogger } from "./useUpdateLogger";
 
-const LocalStorageTutorial = () => {
-  const [firstName, setFirstName] = useLocalStorage("firstName", "kyle");
-  const [lastName, setLastName] = useState("Cook");
+export default function LocalStorageTutorial() {
+  useUpdateLogger("!1");
 
-  useDebugValue(firstName);
-
-  return (
-    <div>
-      First :{" "}
-      <input value={firstName} onChange={(e) => setFirstName(e.target.value)} />
-      <br />
-      Last :{" "}
-      <input value={lastName} onChange={(e) => setLastName(e.target.value)} />
-    </div>
-  );
-};
-
-export default LocalStorageTutorial;
+  return <div>222</div>;
+}

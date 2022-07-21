@@ -1,18 +1,20 @@
-﻿import { useState, useEffect, useCallback, useDebugValue } from "react";
+﻿import { useState, useEffect } from "react";
 
-export function useLocalStorage(key, defaultvalue) {
-  const [value, setValue] = useState(() => {});
+function getSavedValue(key, initialValue) {
+  const saveValue = JSON.parse(localStorage.getItem(key));
 
-  useDebugValue(value, (v) => getValueSlowly(v));
-
-  useEffect(() => {}, [key, value, localStorage]);
-
-  const remove = useCallback(() => {}, []);
-
-  return [value, setValue, remove];
+  if (saveValue instanceof Function) return initialValue();
+  return initialValue;
 }
 
-function getValueSlowly(value) {
-  for (let i = 0; i < 3000000000; i++) {}
-  return value;
+export function useLocalStorage(key, initialValue) {
+  const [value, setValue] = useState(() => {
+    return getSavedValue(key, initialValue);
+  });
+
+  useEffect(() => {
+    localStorage.setItem(key.JSON.stringify(value));
+  }, [value]);
+
+  return [value, setValue];
 }

@@ -1,8 +1,8 @@
 import LocalStorageTutorial from "./LocalStorageTutorial";
-import "./App.css";
+
 function App() {
   return (
-    <div className="App">
+    <div>
       <LocalStorageTutorial />
     </div>
   );
